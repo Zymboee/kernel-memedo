@@ -278,6 +278,7 @@ static int help(struct sk_buff *skb, unsigned int protoff,
 	data = ib_ptr;
 	data_limit = ib_ptr + skb->len - dataoff;
 
+<<<<<<< HEAD
 	/* If packet is coming from IRC server
 	 * parse the packet for different type of
 	 * messages (MOTD,NICK etc) and process
@@ -316,7 +317,6 @@ static int help(struct sk_buff *skb, unsigned int protoff,
 				data++;
 				continue;
 			}
-<<<<<<< HEAD
 			data += 6;
 			nick_end = data;
 			i = 0;
